@@ -1,6 +1,6 @@
 package org.learning.animals;
 
-public class Hawk extends Animal{
+public class Hawk extends Animal implements CanFly{
     @Override
     void sound() {
         System.out.println("scree");
@@ -9,5 +9,10 @@ public class Hawk extends Animal{
     @Override
     void eat() {
         System.out.println("meat");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("I'm Flying!!!!");
     }
 }
